@@ -1,0 +1,55 @@
+{
+  "name": "@react-lit/visually-hidden",
+  "version": "0.0.1",
+  "author": "Joel Voss <mail@joelvoss.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelvoss/react-lit-visually-hidden.git"
+  },
+  "type": "module",
+  "source": "src/index.js",
+  "main": "dist/react-lit-visually-hidden.cjs",
+  "module": "dist/react-lit-visually-hidden.module.js",
+  "exports": {
+    "require": "./dist/react-lit-visually-hidden.cjs",
+    "import": "./dist/react-lit-visually-hidden.modern.js"
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "./Taskfile.sh test",
+    "prepublishOnly": "./Taskfile.sh build"
+  },
+  "devDependencies": {
+    "@jvdx/core": "^2.7.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.2",
+    "jest-axe": "^5.0.1",
+    "parcel": "^2.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "peerDependencies": {
+    "react": "17.x",
+    "react-dom": "17.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "prettier": "@jvdx/prettier-config",
+  "prettierIgnore": [
+    "tests/",
+    "dist/"
+  ],
+  "eslintConfig": {
+    "extends": "@jvdx/eslint-config"
+  },
+  "eslintIgnore": [
+    "tests/",
+    "dist/"
+  ]
+}
