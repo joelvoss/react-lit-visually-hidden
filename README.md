@@ -1,6 +1,6 @@
 # @react-lit/visually-hidden
 
-Render text that is announced to screen readers but visually hidden
+Render text that is announced to screen readers but visually hidden.
 
 ## Installation
 
