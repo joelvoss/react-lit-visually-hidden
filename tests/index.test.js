@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { render } from './test-utils';
-import { axe } from 'jest-axe';
 
 import { VisuallyHidden } from '../src/index';
 
@@ -12,8 +11,7 @@ describe('<VisuallyHidden />', () => {
 				<span aria-hidden>👏</span>
 			</button>,
 		);
-		const results = await axe(container);
-		expect(results).toHaveNoViolations();
+		await expect(container).toHaveNoAxeViolations();
 	});
 
 	it('renders as any HTML element', async () => {
