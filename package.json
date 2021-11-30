@@ -15,7 +15,6 @@
     "require": "./dist/react-lit-visually-hidden.cjs",
     "import": "./dist/react-lit-visually-hidden.modern.js"
   },
-  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "LICENSE"
